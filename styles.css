@@ -70,3 +70,15 @@ body {
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
 }
+#hi-hat-timing{
+width: 35px; 
+}
+#snare-drum-timing{
+width: 35px;
+}
+#kick-drum-timing{
+width: 35px;
+}
+#metronome-timing {
+width: 35px;
+}
