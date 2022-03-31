@@ -32,12 +32,9 @@ if (metronome.checked){
 } else if (snareDrum.checked){
     snaredrum.play ();
 }
-
 const updatedMetronomeCount = document.querySelector ('#metronome-count');
 updatedMetronomeCount.innerText = currentCount;
 }
-
-
 // This function sets up update() to be called every 600ms
 function setupUpdate() {
     setInterval(update, 600);
