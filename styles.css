@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
     display: flex;
@@ -11,26 +10,22 @@ body {
     flex-direction: column;
     background-color: #81b29a;
 }
-
 .tip {
     font-style: italic;
     font-weight: bold;
     margin: 24px;
     font-family: 'Courier New', Courier, monospace;
 }
-
 .metronome {
     display: flex;
     width: 350px;
     height: 400px;
     position: relative;
 }
-
 .background-left {
     border-bottom: 400px solid #e07a5f;
     border-left: 100px solid transparent;
 }
-
 .background-center {
     flex: 1;
     background-color: #f2cc8f;
@@ -38,12 +33,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .background-right {
     border-bottom: 400px solid #e07a5f;
     border-right: 100px solid transparent;
 }
-
 .core {
     flex: 1;
     width: 30%;
@@ -51,13 +44,11 @@ body {
     margin: 24px 0;
     border: 6px dashed #e07a5f;
 }
-
 @keyframes tick {
     0%   { transform: rotate(-30deg); }
     50%  { transform: rotate(30deg);  }
     100% { transform: rotate(-30deg); }
 }
-
 .arm {
     height: 300px;
     width: 20px;
