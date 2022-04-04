@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-}
-body {
+  }
+  body {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -9,47 +9,53 @@ body {
     margin: none;
     flex-direction: column;
     background-color: #81b29a;
-}
-.tip {
+  }
+  .tip {
     font-style: italic;
     font-weight: bold;
     margin: 24px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.metronome {
+    font-family: "Courier New", Courier, monospace;
+  }
+  .metronome {
     display: flex;
     width: 350px;
     height: 400px;
     position: relative;
-}
-.background-left {
+  }
+  .background-left {
     border-bottom: 400px solid #e07a5f;
-    border-left: 100px solid transparent;
-}
-.background-center {
-    flex: 1;
+    border-left: 100px solid red;
+  }
+  .background-center {
+    flex-grow: 1;
     background-color: #f2cc8f;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.background-right {
+  }
+  .background-right {
     border-bottom: 400px solid #e07a5f;
-    border-right: 100px solid transparent;
-}
-.core {
+    border-right: 100px solid red;
+  }
+  .core {
     flex: 1;
     width: 30%;
     background-color: #f4f1de;
     margin: 24px 0;
     border: 6px dashed #e07a5f;
-}
-@keyframes tick {
-    0%   { transform: rotate(-30deg); }
-    50%  { transform: rotate(30deg);  }
-    100% { transform: rotate(-30deg); }
-}
-.arm {
+  }
+  @keyframes tick {
+    0% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+  .arm {
     height: 300px;
     width: 20px;
     background-color: #3d405b;
@@ -60,16 +66,8 @@ body {
     left: 165px;
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
-}
-#hi-hat-timing{
-width: 35px; 
-}
-#snare-drum-timing{
-width: 35px;
-}
-#kick-drum-timing{
-width: 35px;
-}
-#metronome-timing {
-width: 35px;
-}
+  }
+  
+  #kick-drum-text {
+    size: 1;
+  }
